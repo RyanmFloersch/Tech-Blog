@@ -31,7 +31,7 @@ User.init({
     sequelize: db,
     modelName: 'user',
     hooks: {
-        async beforeCreate() {
+        async beforeCreate(user) {
             // bcrypt hash will return an ecrypted string mixing the standard password string 
             // with 10 levels of salt in this case
             const encrypted_pass = await bcrypt.hash(user.password, 10);

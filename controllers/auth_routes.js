@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const User = require('../models/User');
-
+const Post = require('../models/Post');
+const PostComment = require('../models/PostComment');
 
 
 
@@ -44,11 +45,12 @@ router.post('/auth/register', async (req, res) => {
         // Once the user is created, we store their id to the session
         // and redirect them to the protected dashboard
         req.session.user_id = user.id;
-        res.redirect('/dashboard');
+        res.redirect('/login');
     } catch (err) {
         // If any error is thrown when creating the user
         // we redirect them to the login page
-        res.redirect('/login');
+        console.log(err);
+        res.redirect('/register');
     }
 });
 
