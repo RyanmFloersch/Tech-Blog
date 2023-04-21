@@ -9,7 +9,6 @@ const PostComment = require('../models/PostComment');
 router.post('/auth/login', async (req, res) => {
     // The form data - email, password
     const user_data = req.body;
-    console.log(user_data);
     // Find the user by the provided email address
     const user = await User.findOne({
         where: {
