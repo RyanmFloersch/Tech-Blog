@@ -1,7 +1,7 @@
 Tech Blog Application
 
 ## Description
-This application creates a CMS style tech blog site where developers would be able post about techinical concepts and other new technologies. 
+This application creates a CMS style tech blog site where developers would be able post about techinical concepts and other new technologies. The application makes use of mysql to store the usersm posts, and comments within a database as well usinbg it to facilitate association between models. 
 
 ## Your Task
 
