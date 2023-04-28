@@ -1,4 +1,7 @@
-# 14 Model-View-Controller (MVC): Tech Blog
+Tech Blog Application
+
+## Description
+This application creates a CMS style tech blog site where developers would be able post about techinical concepts and other new technologies. 
 
 ## Your Task
 
